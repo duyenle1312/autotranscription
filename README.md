@@ -1,17 +1,13 @@
 # YouTube-transcriber
 
-Let's build an interactive web app that can transcribe YouTube videos in minutes! Streamlit is a great Python library that makes web development a piece of cake. And on top of Streamlit's powerful framework we will plug in Assembly AI's easy-to-use API to quickly upload and transcribe audio files.
+Creating a Virtual Environment:
+command to create virtual env: python -m venv venv
+command to start virtual env: source venv/Scripts/activate (Windows)
 
-
-👉 Go grab your [free AssemblyAI API token](https://www.assemblyai.com/?utm_source=youtube&utm_medium=referral&utm_campaign=channel_assemblyai)
-
-For this project you need 3 libraries on top of Python:
-* Streamlit (pip install streamlit)
-* Youtube_dl (pip install youtube_dl)
-* Dotenv to load env var (pip install python-dotenv)
-* FFmpeg ([download here](https://ffbinaries.com/downloads))
-* Unzip and paste the exe to your root folder
+For this project you need libraries on top of Python:
+pip install --upgrade pytube 
+pip install youtube_transcript_api
+pip install git+https://github.com/openai/whisper.git -q
+pip install streamlit
 
 These libraries will enable us to create a front-end for our project, download youtube videos and extract audio files from youtube videos respectively.
-
-For more instructions and a complete tutorial check out our [YouTube videos](https://www.youtube.com/watch?v=CrLmgrGiVVY)
